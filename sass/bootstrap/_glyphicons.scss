@@ -1,0 +1,307 @@
+//
+// Glyphicons for Bootstrap
+//
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="glyphicon glyphfa fa-star"></span> Star</a>
+
+@at-root {
+  // Import the fonts
+  @font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$fa fa-font-path}#{$fa fa-font-name}.eot'), '#{$fa fa-font-path}#{$fa fa-font-name}.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$fa fa-font-path}#{$fa fa-font-name}.eot?#iefix'), '#{$fa fa-font-path}#{$fa fa-font-name}.eot?#iefix')) format('embedded-opentype'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$fa fa-font-path}#{$fa fa-font-name}.woff2'), '#{$fa fa-font-path}#{$fa fa-font-name}.woff2')) format('woff2'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$fa fa-font-path}#{$fa fa-font-name}.woff'), '#{$fa fa-font-path}#{$fa fa-font-name}.woff')) format('woff'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$fa fa-font-path}#{$fa fa-font-name}.ttf'), '#{$fa fa-font-path}#{$fa fa-font-name}.ttf')) format('truetype'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$fa fa-font-path}#{$fa fa-font-name}.svg##{$fa fa-font-svg-id}'), '#{$fa fa-font-path}#{$fa fa-font-name}.svg##{$fa fa-font-svg-id}')) format('svg');
+  }
+}
+
+// Catchall baseclass
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Individual icons
+.glyphfa fa-asterisk               { &:before { content: "\2a"; } }
+.glyphfa fa-plus                   { &:before { content: "\2b"; } }
+.glyphfa fa-euro,
+.glyphfa fa-eur                    { &:before { content: "\20ac"; } }
+.glyphfa fa-minus                  { &:before { content: "\2212"; } }
+.glyphfa fa-cloud                  { &:before { content: "\2601"; } }
+.glyphfa fa-envelope               { &:before { content: "\2709"; } }
+.glyphfa fa-pencil                 { &:before { content: "\270f"; } }
+.glyphfa fa-glass                  { &:before { content: "\e001"; } }
+.glyphfa fa-music                  { &:before { content: "\e002"; } }
+.glyphfa fa-search                 { &:before { content: "\e003"; } }
+.glyphfa fa-heart                  { &:before { content: "\e005"; } }
+.glyphfa fa-star                   { &:before { content: "\e006"; } }
+.glyphfa fa-star-empty             { &:before { content: "\e007"; } }
+.glyphfa fa-user                   { &:before { content: "\e008"; } }
+.glyphfa fa-film                   { &:before { content: "\e009"; } }
+.glyphfa fa-th-large               { &:before { content: "\e010"; } }
+.glyphfa fa-th                     { &:before { content: "\e011"; } }
+.glyphfa fa-th-list                { &:before { content: "\e012"; } }
+.glyphfa fa-ok                     { &:before { content: "\e013"; } }
+.glyphfa fa-remove                 { &:before { content: "\e014"; } }
+.glyphfa fa-zoom-in                { &:before { content: "\e015"; } }
+.glyphfa fa-zoom-out               { &:before { content: "\e016"; } }
+.glyphfa fa-off                    { &:before { content: "\e017"; } }
+.glyphfa fa-signal                 { &:before { content: "\e018"; } }
+.glyphfa fa-cog                    { &:before { content: "\e019"; } }
+.glyphfa fa-trash                  { &:before { content: "\e020"; } }
+.glyphfa fa-home                   { &:before { content: "\e021"; } }
+.glyphfa fa-file                   { &:before { content: "\e022"; } }
+.glyphfa fa-time                   { &:before { content: "\e023"; } }
+.glyphfa fa-road                   { &:before { content: "\e024"; } }
+.glyphfa fa-download-alt           { &:before { content: "\e025"; } }
+.glyphfa fa-download               { &:before { content: "\e026"; } }
+.glyphfa fa-upload                 { &:before { content: "\e027"; } }
+.glyphfa fa-inbox                  { &:before { content: "\e028"; } }
+.glyphfa fa-play-circle            { &:before { content: "\e029"; } }
+.glyphfa fa-repeat                 { &:before { content: "\e030"; } }
+.glyphfa fa-refresh                { &:before { content: "\e031"; } }
+.glyphfa fa-list-alt               { &:before { content: "\e032"; } }
+.glyphfa fa-lock                   { &:before { content: "\e033"; } }
+.glyphfa fa-flag                   { &:before { content: "\e034"; } }
+.glyphfa fa-headphones             { &:before { content: "\e035"; } }
+.glyphfa fa-volume-off             { &:before { content: "\e036"; } }
+.glyphfa fa-volume-down            { &:before { content: "\e037"; } }
+.glyphfa fa-volume-up              { &:before { content: "\e038"; } }
+.glyphfa fa-qrcode                 { &:before { content: "\e039"; } }
+.glyphfa fa-barcode                { &:before { content: "\e040"; } }
+.glyphfa fa-tag                    { &:before { content: "\e041"; } }
+.glyphfa fa-tags                   { &:before { content: "\e042"; } }
+.glyphfa fa-book                   { &:before { content: "\e043"; } }
+.glyphfa fa-bookmark               { &:before { content: "\e044"; } }
+.glyphfa fa-print                  { &:before { content: "\e045"; } }
+.glyphfa fa-camera                 { &:before { content: "\e046"; } }
+.glyphfa fa-font                   { &:before { content: "\e047"; } }
+.glyphfa fa-bold                   { &:before { content: "\e048"; } }
+.glyphfa fa-italic                 { &:before { content: "\e049"; } }
+.glyphfa fa-text-height            { &:before { content: "\e050"; } }
+.glyphfa fa-text-width             { &:before { content: "\e051"; } }
+.glyphfa fa-align-left             { &:before { content: "\e052"; } }
+.glyphfa fa-align-center           { &:before { content: "\e053"; } }
+.glyphfa fa-align-right            { &:before { content: "\e054"; } }
+.glyphfa fa-align-justify          { &:before { content: "\e055"; } }
+.glyphfa fa-list                   { &:before { content: "\e056"; } }
+.glyphfa fa-indent-left            { &:before { content: "\e057"; } }
+.glyphfa fa-indent-right           { &:before { content: "\e058"; } }
+.glyphfa fa-facetime-video         { &:before { content: "\e059"; } }
+.glyphfa fa-picture                { &:before { content: "\e060"; } }
+.glyphfa fa-map-marker             { &:before { content: "\e062"; } }
+.glyphfa fa-adjust                 { &:before { content: "\e063"; } }
+.glyphfa fa-tint                   { &:before { content: "\e064"; } }
+.glyphfa fa-edit                   { &:before { content: "\e065"; } }
+.glyphfa fa-share                  { &:before { content: "\e066"; } }
+.glyphfa fa-check                  { &:before { content: "\e067"; } }
+.glyphfa fa-move                   { &:before { content: "\e068"; } }
+.glyphfa fa-step-backward          { &:before { content: "\e069"; } }
+.glyphfa fa-fast-backward          { &:before { content: "\e070"; } }
+.glyphfa fa-backward               { &:before { content: "\e071"; } }
+.glyphfa fa-play                   { &:before { content: "\e072"; } }
+.glyphfa fa-pause                  { &:before { content: "\e073"; } }
+.glyphfa fa-stop                   { &:before { content: "\e074"; } }
+.glyphfa fa-forward                { &:before { content: "\e075"; } }
+.glyphfa fa-fast-forward           { &:before { content: "\e076"; } }
+.glyphfa fa-step-forward           { &:before { content: "\e077"; } }
+.glyphfa fa-eject                  { &:before { content: "\e078"; } }
+.glyphfa fa-chevron-left           { &:before { content: "\e079"; } }
+.glyphfa fa-chevron-right          { &:before { content: "\e080"; } }
+.glyphfa fa-plus-sign              { &:before { content: "\e081"; } }
+.glyphfa fa-minus-sign             { &:before { content: "\e082"; } }
+.glyphfa fa-remove-sign            { &:before { content: "\e083"; } }
+.glyphfa fa-ok-sign                { &:before { content: "\e084"; } }
+.glyphfa fa-question-sign          { &:before { content: "\e085"; } }
+.glyphfa fa-info-sign              { &:before { content: "\e086"; } }
+.glyphfa fa-screenshot             { &:before { content: "\e087"; } }
+.glyphfa fa-remove-circle          { &:before { content: "\e088"; } }
+.glyphfa fa-ok-circle              { &:before { content: "\e089"; } }
+.glyphfa fa-ban-circle             { &:before { content: "\e090"; } }
+.glyphfa fa-arrow-left             { &:before { content: "\e091"; } }
+.glyphfa fa-arrow-right            { &:before { content: "\e092"; } }
+.glyphfa fa-arrow-up               { &:before { content: "\e093"; } }
+.glyphfa fa-arrow-down             { &:before { content: "\e094"; } }
+.glyphfa fa-share-alt              { &:before { content: "\e095"; } }
+.glyphfa fa-resize-full            { &:before { content: "\e096"; } }
+.glyphfa fa-resize-small           { &:before { content: "\e097"; } }
+.glyphfa fa-exclamation-sign       { &:before { content: "\e101"; } }
+.glyphfa fa-gift                   { &:before { content: "\e102"; } }
+.glyphfa fa-leaf                   { &:before { content: "\e103"; } }
+.glyphfa fa-fire                   { &:before { content: "\e104"; } }
+.glyphfa fa-eye-open               { &:before { content: "\e105"; } }
+.glyphfa fa-eye-close              { &:before { content: "\e106"; } }
+.glyphfa fa-warning-sign           { &:before { content: "\e107"; } }
+.glyphfa fa-plane                  { &:before { content: "\e108"; } }
+.glyphfa fa-calendar               { &:before { content: "\e109"; } }
+.glyphfa fa-random                 { &:before { content: "\e110"; } }
+.glyphfa fa-comment                { &:before { content: "\e111"; } }
+.glyphfa fa-magnet                 { &:before { content: "\e112"; } }
+.glyphfa fa-chevron-up             { &:before { content: "\e113"; } }
+.glyphfa fa-chevron-down           { &:before { content: "\e114"; } }
+.glyphfa fa-retweet                { &:before { content: "\e115"; } }
+.glyphfa fa-shopping-cart          { &:before { content: "\e116"; } }
+.glyphfa fa-folder-close           { &:before { content: "\e117"; } }
+.glyphfa fa-folder-open            { &:before { content: "\e118"; } }
+.glyphfa fa-resize-vertical        { &:before { content: "\e119"; } }
+.glyphfa fa-resize-horizontal      { &:before { content: "\e120"; } }
+.glyphfa fa-hdd                    { &:before { content: "\e121"; } }
+.glyphfa fa-bullhorn               { &:before { content: "\e122"; } }
+.glyphfa fa-bell                   { &:before { content: "\e123"; } }
+.glyphfa fa-certificate            { &:before { content: "\e124"; } }
+.glyphfa fa-thumbs-up              { &:before { content: "\e125"; } }
+.glyphfa fa-thumbs-down            { &:before { content: "\e126"; } }
+.glyphfa fa-hand-right             { &:before { content: "\e127"; } }
+.glyphfa fa-hand-left              { &:before { content: "\e128"; } }
+.glyphfa fa-hand-up                { &:before { content: "\e129"; } }
+.glyphfa fa-hand-down              { &:before { content: "\e130"; } }
+.glyphfa fa-circle-arrow-right     { &:before { content: "\e131"; } }
+.glyphfa fa-circle-arrow-left      { &:before { content: "\e132"; } }
+.glyphfa fa-circle-arrow-up        { &:before { content: "\e133"; } }
+.glyphfa fa-circle-arrow-down      { &:before { content: "\e134"; } }
+.glyphfa fa-globe                  { &:before { content: "\e135"; } }
+.glyphfa fa-wrench                 { &:before { content: "\e136"; } }
+.glyphfa fa-tasks                  { &:before { content: "\e137"; } }
+.glyphfa fa-filter                 { &:before { content: "\e138"; } }
+.glyphfa fa-briefcase              { &:before { content: "\e139"; } }
+.glyphfa fa-fullscreen             { &:before { content: "\e140"; } }
+.glyphfa fa-dashboard              { &:before { content: "\e141"; } }
+.glyphfa fa-paperclip              { &:before { content: "\e142"; } }
+.glyphfa fa-heart-empty            { &:before { content: "\e143"; } }
+.glyphfa fa-link                   { &:before { content: "\e144"; } }
+.glyphfa fa-phone                  { &:before { content: "\e145"; } }
+.glyphfa fa-pushpin                { &:before { content: "\e146"; } }
+.glyphfa fa-usd                    { &:before { content: "\e148"; } }
+.glyphfa fa-gbp                    { &:before { content: "\e149"; } }
+.glyphfa fa-sort                   { &:before { content: "\e150"; } }
+.glyphfa fa-sort-by-alphabet       { &:before { content: "\e151"; } }
+.glyphfa fa-sort-by-alphabet-alt   { &:before { content: "\e152"; } }
+.glyphfa fa-sort-by-order          { &:before { content: "\e153"; } }
+.glyphfa fa-sort-by-order-alt      { &:before { content: "\e154"; } }
+.glyphfa fa-sort-by-attributes     { &:before { content: "\e155"; } }
+.glyphfa fa-sort-by-attributes-alt { &:before { content: "\e156"; } }
+.glyphfa fa-unchecked              { &:before { content: "\e157"; } }
+.glyphfa fa-expand                 { &:before { content: "\e158"; } }
+.glyphfa fa-collapse-down          { &:before { content: "\e159"; } }
+.glyphfa fa-collapse-up            { &:before { content: "\e160"; } }
+.glyphfa fa-log-in                 { &:before { content: "\e161"; } }
+.glyphfa fa-flash                  { &:before { content: "\e162"; } }
+.glyphfa fa-log-out                { &:before { content: "\e163"; } }
+.glyphfa fa-new-window             { &:before { content: "\e164"; } }
+.glyphfa fa-record                 { &:before { content: "\e165"; } }
+.glyphfa fa-save                   { &:before { content: "\e166"; } }
+.glyphfa fa-open                   { &:before { content: "\e167"; } }
+.glyphfa fa-saved                  { &:before { content: "\e168"; } }
+.glyphfa fa-import                 { &:before { content: "\e169"; } }
+.glyphfa fa-export                 { &:before { content: "\e170"; } }
+.glyphfa fa-send                   { &:before { content: "\e171"; } }
+.glyphfa fa-floppy-disk            { &:before { content: "\e172"; } }
+.glyphfa fa-floppy-saved           { &:before { content: "\e173"; } }
+.glyphfa fa-floppy-remove          { &:before { content: "\e174"; } }
+.glyphfa fa-floppy-save            { &:before { content: "\e175"; } }
+.glyphfa fa-floppy-open            { &:before { content: "\e176"; } }
+.glyphfa fa-credit-card            { &:before { content: "\e177"; } }
+.glyphfa fa-transfer               { &:before { content: "\e178"; } }
+.glyphfa fa-cutlery                { &:before { content: "\e179"; } }
+.glyphfa fa-header                 { &:before { content: "\e180"; } }
+.glyphfa fa-compressed             { &:before { content: "\e181"; } }
+.glyphfa fa-earphone               { &:before { content: "\e182"; } }
+.glyphfa fa-phone-alt              { &:before { content: "\e183"; } }
+.glyphfa fa-tower                  { &:before { content: "\e184"; } }
+.glyphfa fa-stats                  { &:before { content: "\e185"; } }
+.glyphfa fa-sd-video               { &:before { content: "\e186"; } }
+.glyphfa fa-hd-video               { &:before { content: "\e187"; } }
+.glyphfa fa-subtitles              { &:before { content: "\e188"; } }
+.glyphfa fa-sound-stereo           { &:before { content: "\e189"; } }
+.glyphfa fa-sound-dolby            { &:before { content: "\e190"; } }
+.glyphfa fa-sound-5-1              { &:before { content: "\e191"; } }
+.glyphfa fa-sound-6-1              { &:before { content: "\e192"; } }
+.glyphfa fa-sound-7-1              { &:before { content: "\e193"; } }
+.glyphfa fa-copyright-mark         { &:before { content: "\e194"; } }
+.glyphfa fa-registration-mark      { &:before { content: "\e195"; } }
+.glyphfa fa-cloud-download         { &:before { content: "\e197"; } }
+.glyphfa fa-cloud-upload           { &:before { content: "\e198"; } }
+.glyphfa fa-tree-conifer           { &:before { content: "\e199"; } }
+.glyphfa fa-tree-deciduous         { &:before { content: "\e200"; } }
+.glyphfa fa-cd                     { &:before { content: "\e201"; } }
+.glyphfa fa-save-file              { &:before { content: "\e202"; } }
+.glyphfa fa-open-file              { &:before { content: "\e203"; } }
+.glyphfa fa-level-up               { &:before { content: "\e204"; } }
+.glyphfa fa-copy                   { &:before { content: "\e205"; } }
+.glyphfa fa-paste                  { &:before { content: "\e206"; } }
+// The following 2 Glyphicons are omitted for the time being because
+// they currently use Unicode codepoints that are outside the
+// Basic Multilingual Plane (BMP). Older buggy versions of WebKit can't handle
+// non-BMP codepoints in CSS string escapes, and thus can't display these two icons.
+// Notably, the bug affects some older versions of the Android Browser.
+// More info: https://github.com/twbs/bootstrap/issues/10106
+// .glyphfa fa-door                   { &:before { content: "\1f6aa"; } }
+// .glyphfa fa-key                    { &:before { content: "\1f511"; } }
+.glyphfa fa-alert                  { &:before { content: "\e209"; } }
+.glyphfa fa-equalizer              { &:before { content: "\e210"; } }
+.glyphfa fa-king                   { &:before { content: "\e211"; } }
+.glyphfa fa-queen                  { &:before { content: "\e212"; } }
+.glyphfa fa-pawn                   { &:before { content: "\e213"; } }
+.glyphfa fa-bishop                 { &:before { content: "\e214"; } }
+.glyphfa fa-knight                 { &:before { content: "\e215"; } }
+.glyphfa fa-baby-formula           { &:before { content: "\e216"; } }
+.glyphfa fa-tent                   { &:before { content: "\26fa"; } }
+.glyphfa fa-blackboard             { &:before { content: "\e218"; } }
+.glyphfa fa-bed                    { &:before { content: "\e219"; } }
+.glyphfa fa-apple                  { &:before { content: "\f8ff"; } }
+.glyphfa fa-erase                  { &:before { content: "\e221"; } }
+.glyphfa fa-hourglass              { &:before { content: "\231b"; } }
+.glyphfa fa-lamp                   { &:before { content: "\e223"; } }
+.glyphfa fa-duplicate              { &:before { content: "\e224"; } }
+.glyphfa fa-piggy-bank             { &:before { content: "\e225"; } }
+.glyphfa fa-scissors               { &:before { content: "\e226"; } }
+.glyphfa fa-bitcoin                { &:before { content: "\e227"; } }
+.glyphfa fa-btc                    { &:before { content: "\e227"; } }
+.glyphfa fa-xbt                    { &:before { content: "\e227"; } }
+.glyphfa fa-yen                    { &:before { content: "\00a5"; } }
+.glyphfa fa-jpy                    { &:before { content: "\00a5"; } }
+.glyphfa fa-ruble                  { &:before { content: "\20bd"; } }
+.glyphfa fa-rub                    { &:before { content: "\20bd"; } }
+.glyphfa fa-scale                  { &:before { content: "\e230"; } }
+.glyphfa fa-ice-lolly              { &:before { content: "\e231"; } }
+.glyphfa fa-ice-lolly-tasted       { &:before { content: "\e232"; } }
+.glyphfa fa-education              { &:before { content: "\e233"; } }
+.glyphfa fa-option-horizontal      { &:before { content: "\e234"; } }
+.glyphfa fa-option-vertical        { &:before { content: "\e235"; } }
+.glyphfa fa-bars-hamburger         { &:before { content: "\e236"; } }
+.glyphfa fa-modal-window           { &:before { content: "\e237"; } }
+.glyphfa fa-oil                    { &:before { content: "\e238"; } }
+.glyphfa fa-grain                  { &:before { content: "\e239"; } }
+.glyphfa fa-sunglasses             { &:before { content: "\e240"; } }
+.glyphfa fa-text-size              { &:before { content: "\e241"; } }
+.glyphfa fa-text-color             { &:before { content: "\e242"; } }
+.glyphfa fa-text-background        { &:before { content: "\e243"; } }
+.glyphfa fa-object-align-top       { &:before { content: "\e244"; } }
+.glyphfa fa-object-align-bottom    { &:before { content: "\e245"; } }
+.glyphfa fa-object-align-horizontal{ &:before { content: "\e246"; } }
+.glyphfa fa-object-align-left      { &:before { content: "\e247"; } }
+.glyphfa fa-object-align-vertical  { &:before { content: "\e248"; } }
+.glyphfa fa-object-align-right     { &:before { content: "\e249"; } }
+.glyphfa fa-triangle-right         { &:before { content: "\e250"; } }
+.glyphfa fa-triangle-left          { &:before { content: "\e251"; } }
+.glyphfa fa-triangle-bottom        { &:before { content: "\e252"; } }
+.glyphfa fa-triangle-top           { &:before { content: "\e253"; } }
+.glyphfa fa-console                { &:before { content: "\e254"; } }
+.glyphfa fa-superscript            { &:before { content: "\e255"; } }
+.glyphfa fa-subscript              { &:before { content: "\e256"; } }
+.glyphfa fa-bars-left              { &:before { content: "\e257"; } }
+.glyphfa fa-bars-right             { &:before { content: "\e258"; } }
+.glyphfa fa-bars-down              { &:before { content: "\e259"; } }
+.glyphfa fa-bars-up                { &:before { content: "\e260"; } }
